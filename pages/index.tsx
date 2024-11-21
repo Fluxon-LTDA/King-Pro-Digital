@@ -43,9 +43,10 @@ export default function IndexPage() {
           </div>
           <div className="absolute -right-28 -top-68 transform hidden sm:block">
             <Image
-              priority
               alt="Foto de Perfil"
               height={742}
+              loading="lazy"
+              priority={false}
               sizes="(max-width: 768px) 50vw, 418px"
               src={FotoDePerfil}
               width={418}

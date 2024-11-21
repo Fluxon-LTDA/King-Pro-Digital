@@ -6,7 +6,6 @@ import Logo from "../public/logo.png";
 
 import { Head } from "./head";
 
-import { Navbar } from "@/components/navbar";
 import { siteConfig } from "@/config/site";
 
 export default function DefaultLayout({
@@ -27,7 +26,6 @@ export default function DefaultLayout({
 
         <div className="flex flex-col sm:hidden items-center p-6 ">
           <Image priority alt="Logo" src={Logo} width={70} />
-          <p>King Pro Digital</p>
           <p>Todos os direitos reservados.</p>
         </div>
         <Link
