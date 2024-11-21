@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 import FotoDePerfil from "../public/foto_perfil.png";
 import Logo from "../public/logo.png";
 
 import DefaultLayout from "@/layouts/default";
-import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
 export default function IndexPage() {
@@ -22,16 +22,19 @@ export default function IndexPage() {
         <div className="relative z-10 flex items-center justify-between w-full max-w-screen-xl px-4">
           <div className="flex flex-col items-center sm:items-start justify-center gap-2">
             <Image
+              priority
               alt="Logo"
               className="translate-y-[-70px]"
+              height={120}
               src={Logo}
               width={120}
             />
+
             <h1>Estratégias de Tráfego Pago</h1>
             <h2 className="text-secondary">e Anúncios Online</h2>
             <Link href={siteConfig.links.whatsapp} target="_blank">
               <Button
-                className="bg-gradient-to-tr from-secondary to-primary text-white shadow-lg max-w-80 h-14 uppercase font-semibold mt-4"
+                className="bg-gradient-to-tr from-secondary to-primary text-white shadow-lg max-w-80 h-16 sm:h-14 uppercase font-semibold mt-4 px-6"
                 radius="full"
               >
                 Obtenha Resultados Agora
@@ -42,6 +45,8 @@ export default function IndexPage() {
             <Image
               priority
               alt="Foto de Perfil"
+              height={742}
+              sizes="(max-width: 768px) 50vw, 418px"
               src={FotoDePerfil}
               width={418}
             />
