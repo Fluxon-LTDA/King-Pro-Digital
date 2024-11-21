@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
+  name: "King Pro Digital",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
@@ -61,6 +61,9 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/nextui-org/nextui",
+    instagram: "https://www.instagram.com/kingprodigital/",
+    whatsapp: "https://wa.me/+555193781978",
+    fluxon_instagram: "https://www.instagram.com/fluxon.digital/",
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
