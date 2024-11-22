@@ -17,7 +17,7 @@ export default function IndexPage() {
       >
         <div
           className="absolute w-full h-full bg-cover bg-center bg-fixed opacity-20"
-          style={{ backgroundImage: 'url("/fundo.webp")' }}
+          style={{ backgroundImage: 'url("images/fundo.webp")' }}
         />
         <div className="relative z-10 flex items-center justify-between w-full max-w-screen-xl px-4">
           <div className="flex flex-col items-center sm:items-start justify-center gap-2">
