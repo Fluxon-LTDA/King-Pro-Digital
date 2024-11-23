@@ -16,7 +16,7 @@ export default function IndexPage() {
         style={{ minHeight: "100vh" }}
       >
         <div
-          className="absolute w-full h-full bg-cover bg-center bg-fixed opacity-20"
+          className="absolute w-full h-full bg-cover bg-center bg-fixed sm:opacity-20"
           style={{ backgroundImage: 'url("images/fundo.webp")' }}
         />
         <div className="relative z-10 flex items-center justify-between w-full max-w-screen-xl px-4">
@@ -24,7 +24,7 @@ export default function IndexPage() {
             <Image
               priority
               alt="Logo"
-              className="translate-y-[-70px]"
+              className="translate-y-[-60px] sm:translate-y-[-70px]"
               height={120}
               src={Logo}
               width={120}
