@@ -16,8 +16,11 @@ export default function IndexPage() {
         style={{ minHeight: "100vh" }}
       >
         <div
-          className="absolute w-full h-full bg-cover bg-center bg-fixed sm:opacity-20"
-          style={{ backgroundImage: 'url("images/fundo.webp")' }}
+          className="absolute w-full h-full bg-cover bg-center opacity-20"
+          style={{
+            backgroundImage: 'url("images/fundo.webp")',
+            backgroundAttachment: "scroll", // Garantir que a imagem não fique fixa no iOS
+          }}
         />
         <div className="relative z-10 flex items-center justify-between w-full max-w-screen-xl px-4">
           <div className="flex flex-col items-center sm:items-start justify-center gap-2">
@@ -29,7 +32,6 @@ export default function IndexPage() {
               src={Logo}
               width={120}
             />
-
             <h1>Estratégias de Tráfego Pago</h1>
             <h2 className="text-secondary">e Anúncios Online</h2>
             <Link href={siteConfig.links.whatsapp} target="_blank">
