@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 h1, h2 {
-  @apply text-5xl sm:text-6xl font-extrabold text-center;
+  @apply text-4xl sm:text-6xl font-extrabold text-center;
 }
 
 h1 {
@@ -14,7 +14,11 @@ h2 {
   @apply text-secondary;
 }
 
-/* Remove background-attachment: fixed em iOS */
+p {
+  @apply text-medium sm:text-xl text-center;
+}
+
+
 @supports (-webkit-overflow-scrolling: touch) {
   .bg-fixed {
     background-attachment: scroll !important;
