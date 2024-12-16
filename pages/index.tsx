@@ -8,6 +8,7 @@ import Logo from "../public/images/logo.png";
 
 import DefaultLayout from "@/layouts/default";
 import { siteConfig } from "@/config/site";
+import FeedbackCarousel from "@/components/feedbacks";
 
 export default function IndexPage() {
   return (
@@ -58,6 +59,7 @@ export default function IndexPage() {
         </div>
       </section>
 
+      {/* Quem somos? */}
       <section className="w-full p-4 sm:py-12">
         <div className="pb-4">
           <h1>Quem somos?</h1>
@@ -79,6 +81,7 @@ export default function IndexPage() {
         </div>
       </section>
 
+      {/* Como funciona? */}
       <section className="bg-primary p-4 sm:py-12">
         <div className="pb-4">
           <h1>Como funciona?</h1>
@@ -111,24 +114,17 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="bg-white">
-        <div>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-          cum facere, fuga reprehenderit quibusdam cumque laudantium quisquam
-          rem autem at, repellendus illum soluta ipsum ab enim ipsam adipisci
-          labore necessitatibus.lore Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Ab quos laboriosam ratione excepturi quis, deleniti
-          molestiae voluptates, quam dignissimos tempore dolorum corrupti
-          explicabo tenetur, nihil impedit quas quia officiis qui! Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Ratione quasi sed velit
-          ipsa alias possimus quibusdam a, aperiam deleniti dolores excepturi,
-          necessitatibus assumenda totam molestias voluptas inventore numquam
-          non expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Eos quisquam minima fuga a, provident deleniti repudiandae, vitae cum
-          fugit officia odio sit! Ullam necessitatibus repellat magnam
-          praesentium soluta officia eaque.
+      <section className="w-full p-4 sm:py-12">
+        <div className="pb-8">
+          <h1>Feedbacks</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="w-full sm:w-[40%]">
+            <FeedbackCarousel />
+          </div>
         </div>
       </section>
+
 
       <section className="bg-red-500">
         <div>
